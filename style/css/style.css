@@ -1,0 +1,133 @@
+/*# sourceMappingURL=style.css.map */
+
+/* EFEITO NO MENU */
+.nav-bar {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.navbar {
+    background-color: rgb(48, 46, 46);
+}
+
+li a {
+    text-decoration: none;
+    color: #22D4D7;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #22D4D7;
+    transition: width .4s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .4s;
+}
+
+@media only screen and (max-width: 575px) {
+    .nav-link:hover::after {
+        width: 16%;
+        transition: width .4s;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-link:hover::after {
+        width: 16%;
+        transition: width .4s;
+    }
+}
+
+/* EFEITO NO MENU */
+
+
+.carousel-item img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+
+
+/* EFEITO DE ZOOM NOS CARDS */
+.card {
+    border-color: #1DA5A7;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.card:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/* EFEITO DE ZOOM NOS CARDS */
+
+
+@media only screen and (min-width: 1542px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.display-4 {
+    color: #1DA5A7;
+    font-weight: 450;
+}
+
+.form-control {
+    border-color: #1DA5A7;
+}
+
+.btn {
+    transition: all 0.5s ease 0s;
+    background-color: #12959e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(173, 173, 164);
+}
+
+.foot {
+    padding: 15px 15px;
+    width: 100%;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+
+.block {
+    color: #b1b1b1;
+}
+
+.block-link {
+    color: #b1b1b1;
+}
+
+.block-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
